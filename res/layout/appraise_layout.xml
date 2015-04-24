@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    android:orientation="vertical" 
+            android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+    android:descendantFocusability="beforeDescendants">
+<LinearLayout 
+    android:id="@+id/linearLayout_question_for_you_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appraise_item_bg"
+    android:orientation="vertical" 
+            android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" 
+                                 >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/q_red_300"
+        android:fadingEdge="horizontal"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" >
+
+            <ImageView
+                android:id="@+id/imageView_contact_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_launcher" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Qpinion"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView_opiniumn_window_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="O"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageView_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/action_delete" />
+
+        <ImageView
+            android:id="@+id/imageView_previous_question_for_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:rotationY="180"
+            android:src="@drawable/abc_ic_go" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageView_next_question_for_you"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/abc_ic_go" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+
+        <TextView
+            android:id="@+id/textview_question_for_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Is Qpinion make your life simpler by giving you quick opinions of your friends??"
+            android:textColor="@color/q_red_600"
+            android:typeface="serif" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_your_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Not Answered"
+        android:textColor="@color/q_purple_500"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout_answer_view"
+        android:orientation="vertical" >
+
+        <RatingBar
+            android:id="@+id/ratingBar_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" 
+            android:numStars="4"
+            android:visibility="gone"
+            />
+
+
+
+        <EditText
+            android:id="@+id/editText_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" 
+            android:visibility="gone"
+            android:hint="Write your comment here !"
+            android:focusableInTouchMode="true" >
+
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/radioGroup_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" 
+                                      >
+
+            <RadioButton
+                android:id="@+id/radio_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="Yes it does !"         />
+
+            <RadioButton
+                android:id="@+id/radio_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not yet Tried !" />
+
+            <RadioButton
+                android:id="@+id/radio_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No it doesn't !" />
+            <RadioButton
+                android:id="@+id/radio_option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes but not much !" />
+
+        </RadioGroup>
+
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:fadingEdge="horizontal" >
+
+        <Button
+            android:id="@+id/b_appraise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Appraise"
+            android:layout_weight="1"
+            android:textColor="@color/violet_dark" />
+
+        <Button
+            android:id="@+id/b_ignore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/violet_dark" 
+            android:layout_weight="1"
+            android:text="Ignore" />
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

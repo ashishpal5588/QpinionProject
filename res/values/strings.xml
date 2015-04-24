@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Qpinion</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_group">GROUPS</string>
+    <string name="title_activity_add_members">ADD MEMBERS</string>
+    <string name="title_activity_manage_group">MANAGE GROUP</string>
+    <string name="title_activity_register">REGISTER</string>
+    <string name="title_activity_qpinion_main">QPINION</string>
+    <string name="title_section1">OPINION</string>
+    <string name="title_section2">APPRAISE</string>
+    <string name="title_section3">MANAGE GROUPS</string>
+    <string name="title_section4">EXTRA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_ask">ASK</string>
+    <string name="title_activity_ask">ASK</string>
+    <string name="title_activity_detail_opinion">DETAILS</string>
+
+</resources>

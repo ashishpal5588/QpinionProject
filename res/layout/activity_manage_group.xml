@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/q_theme">
+
+    <TextView
+        android:id="@+id/tv_manage_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Group Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+        <Button
+            android:id="@+id/b_add_group_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="Add Members" />
+
+    <ListView
+        android:id="@+id/lv_group_contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/q_theme"
+        android:layout_below="@+id/b_create_group" >
+
+    </ListView>
+
+</LinearLayout>
